@@ -1,0 +1,66 @@
+# cloudfs_flask
+
+运行环境：
+Ubuntu 16.04
+Python 2.7
+Nodejs 8.9.4
+flask 0.12.2（pip install 即可）
+nginx
+PCRE,zlib(nginx依赖)
+uwsgi
+
+1./index.py：flask配置
+配置cloudfs服务地址
+CLOUD_PROXY = {
+    'proto': 'http',
+    'host': '192.168.7.47',
+    'port': '8889',
+}
+配置公网ip端口
+ip='192.168.7.47'
+port='5000'
+用户名
+user_name = "liuyf"
+上传下载文件地址
+local_download_path = "/tmp/ivic/xiety/download/"
+local_upload_path_linux = "/tmp/ivic/xiety/upload"
+
+2./frotend/config/index.js
+配置前端vue服务地址
+dev: {
+    host: '192.168.7.47', 
+    port: 5001,
+}
+3./templates/index.html
+修改地址为vue服务启动地址/app.js
+src="http://192.168.7.47:5001/app.js"
+
+4.安装配置nginx
+(1)获取源码
+因为没有root权限 所以无法使用sudo apt-getinstall nginx安装 需要下载源码编译安装 github地址为 https://github.com/nginx/nginx
+(2)安装
+没有root权限，所以Nginx安装部署后的根目录不能是默认的（因为在usr目录下无法创建文件），必须要设置。另外，PCRE库和zlib库也是需要的，但在Linux命令行下使用yum安装也是需要root权限的。这些都可以通过设置configure参数解决。在GitHub中下载PCRE和zlib库。使用命令：./configure --prefix=(安装的目录，程序可以创建) --with-pcre=（放置PCRE库的目录）--with-zlib=（放置zlib的目录）。
+之后make和make install.
+(3)配置
+nginx.conf 配置公网地址,端口,以及与uwsgi对接
+配置listen为监听端口，server_name为ip地址
+include与uwsgi_pass配置为与uwsgi对接，sock要与之后uwsgi配置一致
+
+5.配置uwsgi
+(1)安装:在miniconda的虚拟环境中安装uwsgi
+(2)配置:uwsgi只需要建立一个配置文件然后调用配置文件进行执行即可
+新建一个uwsgi.ini
+socket为sock文件，需要和nginx配置为同一文件
+wsgi-file为flask项目启动文件index.py
+touch-reload为flask文件项目路径
+
+1.启动vue
+frotend目录下
+npm run i（运行环境安装）
+npm run dev
+#2.启动flask
+#python3 index.py
+2.采用nginx+uwsgi+flask代替原来启动方式
+首先启动nginx
+之后uwsgi --ini (uwsgi配置文件地址) 启动uwsgi
+访问nginx配置的ip地址即可访问

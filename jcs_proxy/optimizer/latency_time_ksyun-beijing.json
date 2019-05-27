@@ -1,0 +1,134 @@
+[
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-qingdao",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.1889603333333333
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-beijing",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.11759566666666667
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-zhangjiakou",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.162461
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-hangzhou",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.5657256666666667
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-shanghai",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.3426093333333333
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-shenzhen",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.49042366666666665
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-huhehaote",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.123215
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-beijing",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.291676
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-suzhou",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.6961996666666668
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-guangzhou",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.737737
+    },
+    {
+        "cloud_name": "ksyun",
+        "bucket_name": "jcsproxy-ksyun-beijing",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.2411553333333333
+    },
+    {
+        "cloud_name": "ksyun",
+        "bucket_name": "jcsproxy-ksyun-shanghai",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 1.294425
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-qingdao-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.16198166666666666
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-beijing-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.18754400000000002
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-zhangjiakou-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.16857999999999998
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-hangzhou-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.648494
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-shanghai-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.3018533333333333
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-shenzhen-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.4577086666666667
+    },
+    {
+        "cloud_name": "aliyun",
+        "bucket_name": "jcsproxy-aliyun-huhehaote-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.12802333333333335
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-beijing-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.24444166666666667
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-suzhou-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.7935576666666667
+    },
+    {
+        "cloud_name": "baidu",
+        "bucket_name": "jcsproxy-baidu-guangzhou-low",
+        "jcsproxy_area": "aliyun-beijing",
+        "latency_time": 0.7349079999999999
+    }
+]
