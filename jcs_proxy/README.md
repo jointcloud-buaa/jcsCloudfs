@@ -162,9 +162,9 @@ $ cp zoo_sample.cfg zoo.cfg
 dataDir=/home/cloudfs/software/zookeeper-3.4.11/data
 dataLogDir=/home/cloudfs/software/zookeeper-3.4.11/logs
 # 下面的 1,2,3 是每个 zk 节点的编号，如果配置文件中含有以下配置，ZooKeeper 就会以集群模式启动
-server.1=10.0.0.19:2888:3888
-server.2=your-ip-address-here:2888:3888
-server.3=10.0.0.4:2888:3888
+server.1=ip-address-of-server1:2888:3888
+server.2=ip-address-of-server2:2888:3888
+server.3=ip-address-of-server3:2888:3888
 ```
 
 在 dataDir 下新建 myid 文件，写入该节点的编号。ZooKeeper 在以集群模式启动时会在这个文件中读取自己的编号。
